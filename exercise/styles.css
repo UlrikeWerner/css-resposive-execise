@@ -19,3 +19,11 @@
   --accent-1: #ff5555;
   --accent-2: #50fa7b;
 }
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --dark: rgb(76, 131, 219);
+    --light: lightblue;
+    --contrast-text: black;
+  }
+}
