@@ -20,21 +20,44 @@
   color: var(--accent-2);
 }
 @media (orientation: landscape) {
-  .heart {
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle at 50% 83%, red 29%, transparent 30%) -40px -100px/100%
-        100%,
-      radial-gradient(circle at 50% 83%, red 29%, transparent 30%) 40px -100px/100%
-        100%,
-      linear-gradient(to bottom left, red 43%, transparent 43%) bottom left/50%
-        50%,
-      linear-gradient(to bottom right, red 43%, transparent 43%) bottom
-        right/50% 50%;
-    background-repeat: no-repeat;
-
+  div.heart {
     position: absolute;
-    right: 20px;
-    bottom: -10px;
+    left: auto;
+    right: 25px;
+    bottom: 40px;
   }
+
+  .heart {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    height: 25px;
+    width: 25px;
+    transform: rotate(-45deg);
+  }
+
+  .heart:after {
+    background-color: red;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0px;
+    left: 12px;
+  }
+
+    .heart:before {
+      content: "";
+      background-color: red;
+      border-radius: 50%;
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      top: -12px;
+      left: 0px;
 }
